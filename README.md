@@ -33,7 +33,7 @@ module.exports = {
 
 ### Configuration
 
-You must set the following environment variables in the .env file for New Relic to work:
+You must add the following environment variables to `~/.ark/.env` file for New Relic to work:
 
 ```bash
 NEW_RELIC_LICENSE_KEY=yourlicensekeygoeshere
