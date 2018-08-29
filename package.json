@@ -14,6 +14,18 @@
     "newrelic"
   ],
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadlock-delegate/ark-newrelic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deadlock-delegate/ark-newrelic/issues"
+  },
+  "homepage": "https://github.com/deadlock-delegate/ark-newrelic",
+  "scripts": {
+    "test": "ARK_ENV=test jest --runInBand --forceExit",
+    "lint": "eslint ./ --fix"
+  },
   "dependencies": {
     "newrelic": "^4.8.1"
   },
