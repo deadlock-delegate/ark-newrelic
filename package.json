@@ -1,7 +1,7 @@
 {
   "name": "@deadlock/ark-newrelic",
   "version": "0.1.0",
-  "description": "New Relic performance reporting",
+  "description": "Ark plugin integrating New Relic performance reporting",
   "author": "roks0n",
   "license": "MIT",
   "keywords": [
@@ -27,7 +27,7 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
-    "newrelic": "^4.8.1"
+    "newrelic": "^5.7.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
