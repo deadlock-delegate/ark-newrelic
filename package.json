@@ -1,5 +1,5 @@
 {
-  "name": "@deadlock/ark-newrelic",
+  "name": "@deadlock-delegate/ark-newrelic",
   "version": "0.1.0",
   "description": "Ark plugin integrating New Relic performance reporting",
   "author": "roks0n",
