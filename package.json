@@ -1,6 +1,6 @@
 {
   "name": "@deadlock-delegate/newrelic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ark plugin integrating New Relic performance reporting",
   "author": "roks0n",
   "license": "MIT",
