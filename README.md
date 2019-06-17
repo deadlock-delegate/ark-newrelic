@@ -4,7 +4,12 @@
 
 ## Installation
 
-### Clone
+#### For production:
+
+`yarn add global @deadlock-delegate/ark-newrelic`
+
+#### For development:
+
 
 ```bash
 cd ~/ark-core/plugins
@@ -14,17 +19,17 @@ lerna bootstrap
 
 ### Registration
 
-Open `~/.ark/config/plugins.js` and add the following as the first entry.
+Open `~/.config/ark-core/<network>/plugins.js` (replace <network> with mainnet, devnet or testnet) and add the following as the first entry.
 
 ```js
-'@deadlock/ark-newrelic': {}
+'@deadlock-delegate/ark-newrelic': {}
 ```
 
 like so:
 
 ```js
 module.exports = {
-  '@deadlock/ark-newrelic': {},  // this is the newly added line
+  '@deadlock-delegate/ark-newrelic': {},  // this is the newly added line
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
@@ -33,7 +38,7 @@ module.exports = {
 
 ### Configuration
 
-You must add the following environment variables to `~/.ark/.env` file for New Relic to work:
+Open `.env` file that is located at `~/.config/ark-core/<network>/.env` (<network> should be replaced by either mainnet, devnet or testnet) and add the following environment variables:
 
 ```bash
 NEW_RELIC_LICENSE_KEY=yourlicensekeygoeshere
