@@ -6,7 +6,7 @@
 
 #### For production:
 
-`yarn add global @deadlock-delegate/ark-newrelic`
+`yarn add global @deadlock-delegate/newrelic`
 
 #### For development:
 
