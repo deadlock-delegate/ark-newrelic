@@ -6,7 +6,7 @@
 
 #### For production:
 
-`yarn add global @deadlock-delegate/newrelic`
+`yarn global add @deadlock-delegate/newrelic`
 
 #### For development:
 
@@ -22,14 +22,18 @@ lerna bootstrap
 Open `~/.config/ark-core/<network>/plugins.js` (replace <network> with mainnet, devnet or testnet) and add the following as the first entry.
 
 ```js
-'@deadlock-delegate/ark-newrelic': {}
+'@deadlock-delegate/newrelic': {
+    enabled: true,
+},
 ```
 
 like so:
 
 ```js
 module.exports = {
-  '@deadlock-delegate/ark-newrelic': {},  // this is the newly added line
+  '@deadlock-delegate/newrelic': {
+    enabled: true,
+  },  // this is the newly added line
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
